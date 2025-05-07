@@ -1,14 +1,15 @@
-package com.example.controller;
+package com.example.teamproject.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 
 @Controller
 public class IndexController {
     @GetMapping("/")
-    public @ResponseBody String index() {
+    public @ResponseBody String getMethodName(@RequestParam String param) {
         return "ㅎㅇ";
     }
     
